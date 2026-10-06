@@ -1,0 +1,13 @@
+version: '1.0'
+services:
+  postgres:
+    image: postgres
+    ports:
+      - '4000:5432'
+    environment:
+      POSTGRES_PASSWORD: myPassword
+
+  my-node-app:
+    image: kunalrathore111/my-node-app
+    ports:
+      - '3000:3000'
