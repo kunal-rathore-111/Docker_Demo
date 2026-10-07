@@ -2,7 +2,7 @@
   "name": "docker-node",
   "module": "index.ts",
   "scripts": {
-    "dev": "bun run --hot index.ts"
+    "dev": "bun run --hot ./src/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -14,6 +14,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1"
   }
 }
